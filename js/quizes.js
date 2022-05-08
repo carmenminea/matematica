@@ -1,115 +1,105 @@
- var quiztitle = "Test de Verificare Progresii <br>Profesor Minea Carmen Mihaela <br> Colegiul Tehnic \"Costin D. Nenițescu\", Brăila";
+ var quiztitle = "Test de Verificare Inelul polinoamelor cu coeficienți complecși <br>Profesor Minea Carmen Mihaela <br> Colegiul Tehnic \"Costin D. Nenițescu\", Brăila";
+
 
  var quiz = [
-        {
-            "question" : "Să se determine $a \\in R$ astfel încât numerele a+2, 2a+5, 4a+8 să fie în progresie aritmetică.",
-            "image" : "",
+    	{
+            "question" : "Fie un polinom $P(x)$ de grad mai mare decât trei. Resturile împărțirilor lui P(x) la $x-1$ , $x-2$ și $X+2$ sunt respectiv 1, 8, -8 . Atunci restul împărțirii lui P(x) la $Q(x)=(x-1)(x^2-4)$ este :",
             "choices" : [
-                                    "a=1",
-                                    "a=0",
-                                    "a=-2",
-                                    "a=-1"
+                                    "$R(x)=x^2+4x-2$",
+                                    "$R(x)=x^2-x-4$",
+                                    "$R(x)=x^2+4x-4$",
+                                    "$R(x)=x^3+3x^2-5$"
                                 ],
-            "correct" : "a=0",
-            "explanation" : "$$2a+5=\\frac{(a+2)+(4a+8)}{2} \\Rightarrow a=0 $$",
+            "correct" : "$R(x)=x^2+4x-4$",
+            "explanation" : " $$P(x)=(x-1)(x^2-4)C(x)+R(x)\,\R(x)=ax^2+bx+c$$ $$\\left\\{\\begin{array}{l}\\begin{array}{c}P(1)=a+b+c=1\\\\P(2)=4a+2b+c=8\\end{array}\\\\P(-2)=4a-2b+c=-8\\end{array}\\right.\\Rightarrow a=1, \\ b=4, \\ c=-4\\ \\Rightarrow$$ $$R(x)=x^2+4x-4$$",
         },
-        {
-            "question" : "Al patrulea termen al unei progresii geometrice $b_n$ pentru care $b_3=20$ si $b_9=1280$ este:",
-            "image" : "",
+   		{
+            "question" : "Fie polinomul $P(x)=x^4+x^3+ax+b\,\a,b\\in R$. Să se determine a și b dacă restul împărțirii lui $P(x+2)$ la $x+1$ este -18, iar restul împărțirii lui $P(x-2)$ la $x-1$ este -12 . ",
             "choices" : [
-                                    "$b_4$=20",
-                                    "$b_4$=30",
-                                    "$b_4$=40",
-                                    "$b_4$=50"
+                                    "$a=-4, b=-16$",
+                                    "$a=3, b=-12$",
+                                    "$a=-3, b=12$",
+                                    "$a=4, b=9$"
                                 ],
-            "correct" : "$b_4$=40",
-            "explanation" : "$$\\frac{b_3}{b_9}=\\frac{20}{1280}\\Rightarrow q^6=64 \\Rightarrow q=2 \\Rightarrow b_4=b_3*q=40$$",
+            "correct" : "$a=-4, b=-16$",
+            "explanation" : " $$\\left\\{\\begin{array}{l}f(x)=P(x+2)=(x+2)^4+(x+2)^3+a(x+2)+b\\\\g(x)=P(x-2)=(x-2)^4+(x-2)^3+a(x-2)+b\\end{array}\\right.\\Rightarrow$$ $$\\left\\{\\begin{array}{l}f(-1)=-18\\Rightarrow a+b=-20\\\\g(1)=-12\\Rightarrow-a+b=-12\\end{array}\\right.\\Rightarrow a=-4,\\ b=-16$$ ",
         },
-        {
-            "question" : "Să se găsească suma primilor 49 de termeni ai unei progresii aritmetice daca $a_1=-1$ și $a_{28}=53$",
-            "image" : "",
+  		{
+            "question" : "Să se determine restul împărțirii polinomului $f=(x-2)^{2n}+(x-1)^n-1$ la polinomul $g=x^2-3x+2$. ",
             "choices" : [
-                                    "$S_{49}=2501$",
-                                    "$S_{49}=2303$",
-                                    "$S_{49}=3148$",
-                                    "$S_{49}=1676$"
+                                    "$-x+1$",
+                                    "$x+1$",
+                                    "$1$",
+                                    "$0$"
                                 ],
-            "correct" : "$S_{49}=2303$",
-            "explanation" : "$$a_{28}=a_1+27*r \\Rightarrow 53=-1+27*r \\Rightarrow r=2 \\Rightarrow $$ \n $$S_{49}=\\frac{(2*a_1+48*r)*49}{2}=2303$$",
+            "correct" : "$0$",
+            "explanation" : " $$\\left\\{\\begin{array}{l}f(1)=a+b\\Rightarrow a+b=0\\\\f(2)=2+b\\Rightarrow2a+b=0\\end{array}\\right.\\Rightarrow a=0,b=0\\Rightarrow$$ Restul împărțirii lui $$f(x) \\ la \\ x^2-3x+2 \\ este \\ $$ $$R=0$$ ",
         },
-        {
-            "question" : "Soluția ecuației 1+8+15+22+...+x=28125 este:",
-            "image" : "",
+ 		{
+            "question" : "Se consideră polinomul $f=x^4+2x^3+mx^2+nx+p,\m,n,p\\in R$. Știind că restul împărțirii lui $f$ la $x-1$ este -15 și că polinomul admite rădăcina $-1+i$ , să se calculeze $f(2)$. ",
             "choices" : [
-                                    "x=84",
-                                    "x=90",
-                                    "x=92",
-                                    "x=88"
+                                    "$8$",
+                                    "$-6$",
+                                    "$0$",
+                                    "$4$"
                                 ],
-            "correct" : "x=90",
-            "explanation" : "Numărul de termeni ai sumei este $$n=\\frac{x+6}{7}$$ iar valoarea sumei este$$\\frac{(1+x)*n}{2} \\Rightarrow \\frac{(1+x)*(x+6)}{2*7}=28125 \\Rightarrow x=90 $$",
+            "correct" : "$0$",
+            "explanation" : " $$f(1)=-15\;\\Rightarrow m+n+p=-18$$ $$x_1=-1+i\\Rightarrow x_2=-1-i\\Rightarrow x^2+2x+2=0$$ Restul împărțirii lui $$f=x^4+2x^3+mx^2+nx+p \\ la \\ x^2+2x+2 \\ este \\  $$ $$R(x)=(n-2m+4)X+(p-2m+4)=0\\Rightarrow $$ $$\\left\\{\\begin{array}{l}\\begin{array}{c}m+n+p=-18\\\\-2m+n+4=0\\end{array}\\\\-2m+p+4=0\\end{array}\\right.\\Rightarrow m=-2,n=-8,p=-8\\Rightarrow f(2)=0$$ ",
         },
-        {
-            "question" : "Într-o progresie geometrică $b_5=61$ și $b_{11}=1647$. Să se afle $b_7$",
-            "image" : "",
+ 		{
+            "question" : "Se consideră ecuația $x^3+2x+1=0$cu rădăcinile $x_1,x_2,x_3$ . Ecuația de gradul al treilea cu rădăcinile $x_1^2,x_2^2,x_3^2$ este :",
             "choices" : [
-                                    "$b_7=180$",
-                                    "$b_7=183$",
-                                    "$b_7=190$",
-                                    "$b_7=200$"
+                                    "$x^3+4x^2+4x-1=0$",
+                                    "$x^3-4x^2+4x-1=0$",
+                                    "$x^3+4x^2-4x-1=0$",
+                                    "$x^3+x+1=0$"
                                 ],
-            "correct" : "$b_7=183$",
-            "explanation" : "$$\\frac{b_{11}}{b_5}=q^6 \\Rightarrow q^6=27 \\Rightarrow q=\\sqrt{3} \\Rightarrow a_1=\\frac{61}{9} \\Rightarrow a_7=183$$",
+            "correct" : "$x^3+4x^2+4x-1=0$",
+            "explanation" : " $$\\left\\{\\begin{array}{l}\\begin{array}{c}x_1+x_2+x_3=0\\\\x_1x_2+x_2x_3+x_1x_3=2\\end{array}\\\\x_1x_2x_3=-1\\end{array}\\right.$$ $$\\left\\{\\begin{array}{l}\\begin{array}{c}S_1=x_1^2+x_2^2+x_3^2=-4\\\\S_2=x_1^2x_2^2+x_2^2x_3^2+x_1^2x_3^2=12\\end{array}\\\\S_3=x_1^2x_2^2x_3^2=1\\end{array}\\right.$$ $$x^3-S_1x^2+S_2x-S_3=0\\Rightarrow x^3+4x^2+4x-1=0$$",
         },
-        {
-            "question" : "Fie progresia aritmetică $a_n$ în care $a_1=1$ și $a_5=13$. Să se calculeze $a_{2014}$",
-            "image" : "",
+		{
+            "question" : "Polinomul $f=(a^2-3a+2)x^3+(a^2-4a+3)x^2+(a^2-1)x+1$are gradul doi pentru : ",
             "choices" : [
-                                    "$a_{2014}=4028$",
-                                    "$a_{2014}=6039$",
-                                    "$a_{2014}=6040$",
-                                    "$a_{2014}=6014$"
+                                    "$a\\in\\left\\{1,2\\right\\}$",
+                                    "$a\\in\\left\\{2\\right\\}$",
+                                    "$a\\in R$",
+                                    "$a\\in\\left\\{1\\right\\}$"
                                 ],
-            "correct" : "$a_{2014}=6040$",
-            "explanation" : "$$a_5=1+4*r \\Rightarrow r=3 \\Rightarrow a_{2014}=1+3*2013 \\Rightarrow a_{2014}=6040$$",
+            "correct" : "$a\\in\\left\\{2\\right\\}$",
+            "explanation" : " $$a^2-3a+2=0\\Rightarrow a=1,a=2$$ $$a^2-4a+3\\neq0\\Rightarrow a\\neq1,a\\neq3$$ $$\\Rightarrow a=2$$",
         },
-        {
-            "question" : "Fie progresia aritmetică $a_n$ în care $a_3=5$ și $a_6=11$. Să se calculeze $a_9$",
-            "image" : "",
+		{
+            "question" : "Suma rădăcinilor ecuației $x^3-2mx^2+3m^2x+5=0$ este $x_1+x_2+x_3=4 .$ Să se calculeze $x_1x_2+x_2x_3+x_3x_1$. ",
             "choices" : [
-                                    "$a_9=17$",
-                                    "$a_9=16$",
-                                    "$a_9=18$",
-                                    "$a_9=20$"
+                                    "$8$",
+                                    "$12$",
+                                    "$16$",
+                                    "$10$"
                                 ],
-            "correct" : "$a_9=17$",
-            "explanation" : "$$a_3=a_1+2*r, a_6=a_1+5*r \\Rightarrow a_1+2*r=5, a_1+5*r=11 \\Rightarrow $$ \n $$r=2, a_1=1 \\Rightarrow a_9=1+8*2=17$$",
+            "correct" : "$12$",
+            "explanation" : " $S_1=x_1+x_2+x_3=\\frac{-b}a=2m=4\\\Rightarrow $$ $$S_2=x_1x_2+x_2x_3+x_3x_1=\\frac ca=3m^2=12$",
         },
-        {
-            "question" : "Să se determine numerele reale x știind că x-3, 4, x+3 sunt trei termeni consecutivi ai unei progresii aritmetice.",
-            "image" : "",
+		{
+            "question" : "Dacă polinomul $P=6x^4+x^3+ax^2+bx-1\\\in C[x]$ se divide prin $ x^2+1 $ , atunci suma $a+b$ este egală cu : ",
             "choices" : [
-                                    "x=5",
-                                    "x=2",
-                                    "x=3",
-                                    "x=4"
+                                    "$0$",
+                                    "$2$",
+                                    "$4$",
+                                    "$6$"
                                 ],
-            "correct" : "x=4",
-            "explanation" : "$$\\frac{(x-3)+(x+3)}{2}=4 \\Rightarrow x=4 $$",
+            "correct" : "$6$",
+            "explanation" : " Restul împărțirii polinomului P(x) la $x^2+1$ este $$R(x)=(b-1)x-a+5=0\\Rightarrow a=5 \;\\\ b=1\\Rightarrow\\ a+b=6$$",
         },
-        {
-            "question" : "Să se determine produsul primilor trei termeni ai unei progresii geometrice $b_n$ știind că primul termen este egal cu 1 și rația este q=-2",
-            "image" : "",
+ 
+   		{
+            "question" : "Dacă polinomul $ \P=x^3-2x^2-x+a $ are două rădăcini opuse, atunci a treia rădăcină este : ",
             "choices" : [
-                                    "$b_1*b_2*b_3=-8$",
-                                    "$b_1*b_2*b_3=4$",
-                                    "$b_1*b_2*b_3=8$",
-                                    "$b_1*b_2*b_3=-4$",
+                                    "$x_3=0$",
+                                    "$x_3=1$",
+                                    "$x_3=2$",
+                                    "$x_3=-1$"
                                 ],
-            "correct" : "$b_1*b_2*b_3=-8$",
-            "explanation" : "$$b_2=-2, b_3=4 \\Rightarrow b_1*b_2*b_3=-8$$",
-        },
-
-
-
+            "correct" : "$x_3=2$",
+            "explanation" : "$$\\ x_1+x_2+x_3=\\frac{-b}a=2 \$$ $$ x_1+x_2=0\\Rightarrow x_3=2$$",
+        },		
     ];
